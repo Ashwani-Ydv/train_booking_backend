@@ -1,15 +1,11 @@
-<<<<<<< HEAD
 # compiled output
 /dist
 /node_modules
 
-=======
->>>>>>> 12ff7310cde6437c707ae628cb367fcee5480a40
 # Logs
 logs
 *.log
 npm-debug.log*
-<<<<<<< HEAD
 pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -37,7 +33,6 @@ lerna-debug.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-=======
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
@@ -164,4 +159,3 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
->>>>>>> 12ff7310cde6437c707ae628cb367fcee5480a40
