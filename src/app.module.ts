@@ -15,8 +15,7 @@ import { Seat } from './seat/entities/seat.entity';
       password: 'JqhtgtCvw81eZtCBfrzUMTkeEybfSGtl',
       database: 'unstop_postgres',
       entities: [Seat],
-      synchronize: true,
-      ssl: true,
+      synchronize: true
     }),
     SeatsModule,
   ],
