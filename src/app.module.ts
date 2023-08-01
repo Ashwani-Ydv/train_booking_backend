@@ -9,13 +9,14 @@ import { Seat } from './seat/entities/seat.entity';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'dpg-cj4b3mqip7vuask818ag-a',
+      host: 'dpg-cj4b3mqip7vuask818ag-a.oregon-postgres.render.com',
       port: 5432,
       username: 'admin',
       password: 'L0O8OHAJ4SvvEtpqxDJ2hlJqsN852w1D',
       database: 'admin_ugpf',
       entities: [Seat],
       synchronize: true,
+      ssl: true,
     }),
     SeatsModule,
   ],

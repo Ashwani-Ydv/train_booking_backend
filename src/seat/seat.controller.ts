@@ -1,5 +1,5 @@
 // seats.controller.ts
-import { Controller, Get, Post, Param, Body } from '@nestjs/common';
+import { Controller, Get, Post, Param, Body, Delete } from '@nestjs/common';
 import { SeatsService } from './seat.service';
 import { Seat } from './entities/seat.entity';
 
@@ -24,5 +24,10 @@ export class SeatsController {
   @Post('/create')
   async createSeats(@Body() seats: Seat[]): Promise<Seat[]> {
     return await this.seatsService.createSeats(seats);
+  }
+
+  @Delete('')
+  async deleteAll(): Promise<void> {
+    return await this.seatsService.deleteAll();
   }
 }

@@ -79,4 +79,8 @@ export class SeatsService {
     const sortedSeats = seats.sort((a, b) => a.row - b.row || a.seat - b.seat);
     return this.bookSeatsInRow(sortedSeats, numSeats);
   }
+
+  async deleteAll(): Promise<void> {
+    await this.seatsRepository.clear();
+  }
 }
