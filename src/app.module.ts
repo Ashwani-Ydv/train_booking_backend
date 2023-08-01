@@ -16,7 +16,6 @@ import { Seat } from './seat/entities/seat.entity';
       database: 'admin_ugpf',
       entities: [Seat],
       synchronize: true,
-      ssl: true,
     }),
     SeatsModule,
   ],
