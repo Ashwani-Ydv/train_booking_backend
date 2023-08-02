@@ -80,7 +80,8 @@ export class SeatsService {
     return this.bookSeatsInRow(sortedSeats, numSeats);
   }
 
-  async deleteAll(): Promise<void> {
-    await this.seatsRepository.clear();
+  async updateAll(): Promise<void> {
+    await this.seatsRepository.update(
+      {},{status:"available"});
   }
 }

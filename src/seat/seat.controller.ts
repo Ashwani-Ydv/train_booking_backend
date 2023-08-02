@@ -1,5 +1,5 @@
 // seats.controller.ts
-import { Controller, Get, Post, Param, Body, Delete } from '@nestjs/common';
+import { Controller, Get, Post,Put, Param, Body, Delete } from '@nestjs/common';
 import { SeatsService } from './seat.service';
 import { Seat } from './entities/seat.entity';
 
@@ -26,8 +26,8 @@ export class SeatsController {
     return await this.seatsService.createSeats(seats);
   }
 
-  @Delete('')
-  async deleteAll(): Promise<void> {
-    return await this.seatsService.deleteAll();
+  @Put()
+  async upadateAll(): Promise<void> {
+    return await this.seatsService.updateAll();
   }
 }
